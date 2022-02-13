@@ -1,8 +1,4 @@
-'''
-Created on Feb 13, 2022
 
-@author: Silvermoon
-'''
 import kivy
 from kivy.app import App
 from kivy.uix.relativelayout import RelativeLayout

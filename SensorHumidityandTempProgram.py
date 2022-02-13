@@ -62,11 +62,6 @@ class HumidityandTempSerial(RelativeLayout):
             arduino.close()
             print("-----CONNTECTION CLOSED-------")
 
-            #print("Start program")
-            #schedule.every(10).seconds.do(main) #runs the main function every 10 seconds
-            #while True: 
-            #   schedule.run_pending()#checks to see if 10 seconds has passed to run main function again
-            #   time.sleep(1)
                 
         def stopRecording(self):
             print("STOPPED RECORDING DATA")
@@ -80,13 +75,7 @@ class HumidityandTempSerial(RelativeLayout):
         
         lblTextfile = Label(text="*All recording are saved in sensorData.txt file", size_hint=(0.3,0.1), pos_hint={'x':0.22,'y':0.45})
         layoutHome.add_widget(lblTextfile)
-        '''
-        btnStopRecording = Button(text="Stop Recording Data", size_hint=(0.3,0.1), pos_hint={'x':0.162, 'y':0.78}, on_press = stopRecording)
-        layoutHome.add_widget(btnStopRecording)
 
-        lblRecordingOrNot = Label(text="Program is NOT recording",size_hint=(0.3,0.1), pos_hint={'x':0.362, 'y':0.68},color=(.9,.9,.9,1))
-        layoutHome.add_widget(lblRecordingOrNot)
-        '''
         
         self.add_widget(layoutHome)#adding the innerlayout to the root
 
